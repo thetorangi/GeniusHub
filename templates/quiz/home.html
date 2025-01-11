@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GeniusHub</title>
+        <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+            background-position: center;
+            background-size: center;
+        }
+        .navbar{
+            width: 90%;
+            {% comment %} padding: 30px; {% endcomment %}
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo{
+            width: 160px;
+            margin-top: -10px;
+            margin-left:-10px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            font-size: 30px;
+            list-style: none;
+            display: inline-block;    
+            margin:20px;
+            transition: 1s;
+            
+        }
+        .navbar ul li a{
+            margin-left:20px;
+            transition: 1s;
+            text-decoration: none;
+            color: white;
+            font-weight: 15;
+            padding: 5px;
+        }
+        li a:hover{
+            {% comment %} background: #00BFFF; {% endcomment %}
+            letter-spacing:4px;
+            transition: 1s;
+        }
+        .navbar a:hover{
+            color: cyan ;
+            text-decoration:underline;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            color: white;
+            top: 45%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+        .content h1{
+            margin-top: 80px;
+            font-size: 90px;
+            font-weight: 800;
+        }
+        .button{
+            width: 200px;
+            padding: 15px;
+            margin: 20px 5px;
+            text-align: center;
+            border-radius: 25px;
+            color: black;
+            border: 2px;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition:1s;
+        }
+        .button:hover{
+            background: rgb(0, 192, 226);
+            transition: 1s;
+            letter-spacing:10px;
+        }
+        .button:hover{
+            color: white;
+            width:300px;
+        }
+        .banner video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        @media(min-aspect-ratio: 16/9){
+            .banner video{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        
+        .ttl a{
+            ease in : 1s;
+            transition: 1.5s;
+            color: white ;
+            font-family: "Nova Flat" ; 
+            text-decoration: none;
+        }
+        
+        
+        tll a:link {
+            transition: 1.5s;
+            background-color: transparent;
+            text-decoration: none;
+            
+          }
+          
+          .ttl a:hover {
+            font-weight:70px;
+            color: #00BFFF ;
+            transition: 1.5s;
+            transform: scale(3.0);
+            background-color: transparent;
+            text-decoration: underline;
+            letter-spacing: 10px;
+          }
+
+          .new1{
+            margin-top:160px;
+          }
+
+          .mee{
+            margin-right:-1250px;
+            font-size:20px;
+            color:white;
+            margin-bottom:5px;
+          }
+
+          .mee a{
+            transition:1s;
+            letter-spacing:0.1em;
+            color: #F0F8FF;
+            font-size:30px;
+            font-family: 'Tangerine', serif;
+          }
+
+          .mee a:link{
+            color: #F0F8FF;
+            
+            transition:1s;
+          }
+
+          .mee a:hover{
+            letter-spacing:0.25em;
+            color:cyan;
+          }
+
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+    </head>
+    <body>
+        
+        
+        <div class="banner">
+            <video autoplay loop muted plays-inline>
+                <source src="/static/video/bg.mp4" type="video/mp4">
+            </video>
+            <div class="navbar">
+                <img class="logo"   src="/static/image/logo.png">
+                <ul style="margin-left:130px; ">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="/adminclick1">Admin</a></li>
+                    <li><a href="/teacher/teacherclick1">Teacher</a></li>
+                    <li><a href="/student/studentclick1">Student</a></li>
+                    
+                    <li><a href="/aboutus">AboutUs</a></li>
+                    <li><a href="/contactus">ContactUs</a></li>
+                </ul>
+            </div>
+
+            <br><br><br><br>
+            <div class="content new1 ">
+                <h1 class="ttl" > <a style=" font-size: 160px;" href="index"> GeniusHub </a></h1>
+                <p style="font-size: 30px; padding:20px; letter-spacing:7px;"> Test your skills and become a master. </p>
+                <div>
+                  <form action="index">
+                    <input type="submit" class="button" value="Explore Now" />
+                  </form>
+                
+                    <label class="mee" > <a href="https://www.linkedin.com/in/shrinath-torangi-24bb0a28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <b> coderKarma </b> </a> &nbsp;  &  &nbsp; <a href="#"> <b> Sabir </b> </a>  </label>
+                
+                </div>
+            </div>
+        </div>  
+
+    </body>
+</html>

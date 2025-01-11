@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <title> {% block title %} ContactUs {% endblock title %} </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+  .alert{
+    margin-top:30px;
+  }
+  .frm{
+    margin-left:30%;
+    margin-right:30%;
+  }
+</style>
+
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+
+  <center>
+    <h3 class='alert alert-success'>Tell Us About Your Issue !</h3>
+  </center>
+    <form class="frm" action="/contactussuccess" >
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Enter Name : </label>
+        <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="John Wick">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address : </label>
+        <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message : </label>
+        <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <input class="btn btn-primary" type="submit" value="Submit">
+
+    </form>
+
+
+    <br><br><br><br>
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin-top : 28px;
+    }
+  </style>
+
+  <title>About</title>
+</head>
+
+<body>
+
+  {% include "quiz/navbar2.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    
+    <p class="lead">
+      This Website is Designed and Develpoed by <a href="https://www.linkedin.com/in/shrinath-torangi-24bb0a28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <b> coderKarma </b> </a> & <a href="#"> <b> Sabir </b> </a> <br> We Provide Platform For Students To practice Questions  <br> Teacher can add course/exam to System and Questions to that course.</p>
+    <hr class="my-4">
+    <p>Explore our Website. <br>
+    Hope You Liked It <3 </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+    <br><br><br><br><br>
+  </div>
+
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
