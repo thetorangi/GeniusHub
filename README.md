@@ -1,6 +1,6 @@
 ## GeniusHub
 
-![developer](https://www.linkedin.com/in/shrinath-torangi)
+[![developer](https://www.linkedin.com/in/shrinath-torangi)](https://www.linkedin.com/in/shrinath-torangi)
 
 Home Page 
 ![Home](static/screenshots/home.png)
